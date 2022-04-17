@@ -27,6 +27,12 @@ export default function Home({
       </Head>
       <section className={utilStyles.headingMd}>
         <p>Hello World</p>
+        <p><Button type="primary" onClick={info}>Ant design Test</Button></p>
+        <p>
+          <Link href={`/login`}>
+            <Button type="primary">Go to login page</Button>
+          </Link>
+        </p>
         <p>
           (This is a sample website - you’ll be building a site like this in{' '}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
@@ -48,7 +54,6 @@ export default function Home({
           ))}
         </ul>
       </section>
-      <Button type="primary" onClick={info}>Ant design Test</Button>
     </Layout>
   )
 }
