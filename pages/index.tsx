@@ -25,6 +25,11 @@ export default function Home({ }: {
         <p>Hello World</p>
         <p><Button type="primary" onClick={info}>Ant design Test</Button></p>
         <p>
+          <Link href={`/audio_chat`}>
+            <Button type="primary">Audio Chat</Button>
+          </Link>
+        </p>
+        <p>
           <Link href={`/chat_room`}>
             <Button type="primary">Chat Room</Button>
           </Link>

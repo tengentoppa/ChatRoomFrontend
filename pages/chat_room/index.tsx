@@ -1,4 +1,4 @@
-import { Button, Input, List, Typography } from "antd";
+import { Button, Input, List } from "antd";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useRef } from "react";
@@ -18,7 +18,8 @@ function ChatRoom() {
         };
     }, []);
 
-    return <>
+    return 
+    <>
         <div className={styles.head_split}>
             <Link href={'/'}>
                 <a className={styles.login_head_logo_link}>
@@ -42,7 +43,7 @@ function ChatRoom() {
                     </List.Item>)}
             />
         </div>
-    </>
+    </>;
 }
 
 export default ChatRoom;
